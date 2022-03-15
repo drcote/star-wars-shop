@@ -1,0 +1,87 @@
+@import '../../style/mixins.scss';
+
+.product {
+
+  margin-bottom: 123px;
+
+  &__form {
+    display: flex;
+    background-color: $color-card-backgroud;
+    border-radius: 48px;
+    padding: 158px 0;
+  }
+
+  &__wrapper {
+    width: 1632px;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 605px;
+    height: 605px;
+    margin-left: 80px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 647px;
+  }
+
+  &__name {
+    @include font-text(78px, 112%, bold);
+    text-align: left
+  }
+
+  &__desc {
+    @include font-text(24px, 142%, 500);
+    text-align: left;
+  }
+
+  &__form-order {
+    position: relative;
+    margin-top: 64px;
+    margin-right: 51px;
+  }
+
+  &__form-email {
+    width: calc(100%);
+    outline: none;
+    @include font-text(24px, 42%, 500);
+    border: 2px solid $color-input-border;
+    box-sizing: border-box;
+    border-radius: 72px;
+    background-color: $color-search-background;
+    padding: 25px 275px 25px 32px;
+
+    &:focus {
+      border-color: $color-search-focus;
+    }
+  }
+
+  &__form-submit {
+    @include font-text(24px, 100%, bold);
+    position: absolute;
+    right: 0;
+    background: $color-button-background;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.32);
+    border-radius: 50px;
+    color: $color-button-text;
+    padding: 22px 32px;
+    margin: 5px;
+  }
+
+  &__related-caption {
+    @include font-text(56px, 112%, bold);
+    text-align: left;
+    margin: 88px 0 32px 0;
+  }
+
+  &__related-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

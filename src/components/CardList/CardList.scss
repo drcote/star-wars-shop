@@ -1,0 +1,25 @@
+@import '../../style/mixins.scss';
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @include media-up--S {
+    margin: -16px -12px;
+    padding-bottom: 44px;
+  }
+
+  @include media-up--M {
+    padding-bottom: 65px;
+  }
+
+  @include media-up--L {
+    padding-bottom: 88px;
+  }
+
+  @include media-up--XL {
+    margin: -16px;
+  }
+}

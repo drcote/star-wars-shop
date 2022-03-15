@@ -1,0 +1,40 @@
+@import './variables';
+
+@mixin font-text ($size, $line, $weight: normal, $style: normal, $color: #000000, $font : 'Spartan') {
+  font-family: $font, "Helvetica", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line;
+  color: $color;
+  font-style: $style;
+}
+
+@mixin media-up--XS {
+  @media screen and (min-width: $media-up--XS) {
+    @content;
+  }
+}
+
+@mixin media-up--S {
+  @media screen and (min-width: $media-up--S) {
+    @content;
+  }
+}
+
+@mixin media-up--M {
+  @media screen and (min-width: $media-up--M) {
+    @content;
+  }
+}
+
+@mixin media-up--L {
+  @media screen and (min-width: $media-up--L) {
+    @content;
+  }
+}
+
+@mixin media-up--XL {
+  @media screen and (min-width: $media-up--XL) {
+    @content;
+  }
+}
