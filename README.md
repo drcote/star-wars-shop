@@ -3,7 +3,7 @@
 
   
 
-The work of the project can be viewed in (https://github.com/facebook/create-react-app).
+The work of the project can be viewed in (https://star-wars-drcote.herokuapp.com/).
 
   
 
